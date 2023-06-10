@@ -11,9 +11,15 @@ public class App {
 		ApplicationContext con = new ClassPathXmlApplicationContext("com/springcore/stereotype/stereoconfig.xml");
 		
 		Student student = (Student)con.getBean("student");
-		System.out.println(student);
-		System.out.println(student.getAddress());
-
+		//System.out.println(student);
+		//System.out.println(student.getAddress());
+		System.out.println(student.hashCode());
+		
+		Student student2 = (Student)con.getBean("student");
+		System.out.println(student2.hashCode());
+		
+		
+		
 	}
 
 }

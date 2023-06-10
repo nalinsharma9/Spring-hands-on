@@ -19,8 +19,8 @@
   	<value>asfasfav</value>	
   </util:list>
   
-  
- <bean class="com.springcore.standalone.collections.Person" name = "person1">
+ <!--  bean scope is singleton by default   -->
+ <bean class="com.springcore.standalone.collections.Person" name = "person1" scope="prototype">    
  	<property name="friends" ref="myfriends" />
  </bean>
  
